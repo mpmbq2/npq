@@ -1,2 +1,2 @@
-def hello() -> str:
-    return "Hello from npq!"
+def main() -> None:
+    print("Hello from npq!")
