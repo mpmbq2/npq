@@ -1,0 +1,2 @@
+# npq
+Psc = npq 
