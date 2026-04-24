@@ -7,7 +7,9 @@ authors = [
     { name = "Claude", email = "noreply@anthropic.com" }
 ]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "numpy>=1.26",
+]
 
 [project.scripts]
 npq = "npq:main"
@@ -15,3 +17,12 @@ npq = "npq:main"
 [build-system]
 requires = ["uv_build>=0.8.17,<0.9.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "matplotlib>=3.8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
